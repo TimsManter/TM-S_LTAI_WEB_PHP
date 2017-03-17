@@ -1,0 +1,47 @@
+<style>
+    label, form > input, select, .input-group {
+        float: left;
+        margin-bottom: 10px;
+    }
+    label, .input-group, h4 {
+        clear: left;
+        min-width: 120px;
+    }
+    h4 {
+        margin-bottom: 10px;
+    }
+</style>
+
+<h3>Przykładowy formularz HTML:</h3>
+<form action="odbierz.php" method="post">
+    <label>Nazwisko:</label>
+    <input type="text" name="nazwisko">
+    <label>Wiek:</label>
+    <input type="text" name="wiek">
+    <label>Państwo:</label>
+    <select name="panstwo">
+        <option>Polska</option>
+        <option>Albania</option>
+        <option>ZSRR</option>
+        <option>Czechosłowacja</option>
+    </select>
+    <label>Adres e-mail:</label>
+    <input type="text" name="email">
+    <h4>Zamawiam tutorial z języka:</h4>
+    <span class="input-group">
+        <input type="checkbox" name="lang_php">PHP
+        <input type="checkbox" name="lang_cpp">C/C++
+        <input type="checkbox" name="lang_java">Java
+        <input type="checkbox" name="lang_csharp">C#
+    </span>
+    <h4>Sposób zapłaty:</h4>
+    <span class="input-group">
+        <input type="radio" name="payWay" value="euro">eurocard
+        <input type="radio" name="payWay" value="visa">visa
+        <input type="radio" name="payWay" value="przelew">przelew bankowy
+    </span>
+    <span class="input-group">
+        <input type="submit" value="Wyślij">
+        <input type="reset" value="Anuluj">
+    </span>
+</form>

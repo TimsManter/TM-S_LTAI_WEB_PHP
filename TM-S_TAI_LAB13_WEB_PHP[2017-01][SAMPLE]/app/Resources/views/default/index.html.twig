@@ -1,0 +1,11 @@
+{% extends '::base.html.twig' %}
+{% block body %}
+<h2>Języki programowania</h2>
+<ul>
+{% for jezyk in entities %}
+<li>
+{{jezyk.caption}}
+</li>
+{% endfor %}
+</ul>
+{% endblock %}
